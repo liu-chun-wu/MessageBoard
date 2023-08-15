@@ -55,7 +55,7 @@ try {
                         </form>
                     </td>
                     <td align="center" style="width:5%;">
-                        <form action="edit.php?do=delete" method="post">
+                        <form action="api/delete.php" method="post">
                             <input type="hidden" name="id" value=<?= $data[$i]['id']; ?>>
                             <input type="submit" value="刪除">
                         </form>

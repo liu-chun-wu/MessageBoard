@@ -60,7 +60,7 @@ class DB
         $sql = "select * from $this->table order by " . $arg . " desc";
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
-    public function updateByArray(...$arg)
+    public function updateByArray($arg)
     {
         foreach ($arg as $key => $value) {
             if ($key != 'id') {
