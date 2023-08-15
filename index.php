@@ -86,6 +86,11 @@ try {
         }
         ?>
     </div>
+    <div style="height: 50px;width:100%;" align="center">
+        <button onclick="location='edit.php?do=post'">
+            <font size="7">新增貼文</font>
+        </button>
+    </div>
 
 </body>
 

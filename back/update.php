@@ -10,10 +10,10 @@ $data = $guestbook->findById($_POST['id']);
             <td><label for="author">作者 : </label><input type=" ext" name="author" value="<?= $data['author']; ?>"></td>
         </tr>
         <tr align="center">
-            <td><label for="subject">主題 : </label><input type="text" name="subject" value="<?= $data['author']; ?>"></td>
+            <td><label for="subject">主題 : </label><input type="text" name="subject" value="<?= $data['subject']; ?>"></td>
         </tr>
         <tr align="center">
-            <td><label for="content">內容 : </label><input type="text" name="content" value="<?= $data['author']; ?>"></td>
+            <td><label for="content">內容 : </label><input type="text" name="content" value="<?= $data['content']; ?>"></td>
         </tr>
         <td><input type="hidden" name="date" value="<?= date("Y-m-d H:i:s"); ?>"></td>
         <td><input type="hidden" name="id" value="<?= $data['id']; ?>"></td>
