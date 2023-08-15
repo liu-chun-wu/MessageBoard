@@ -36,7 +36,7 @@ try {
     ?>
     <table align="center" style="height: 75px;width:70%;border: 1px solid;">
         <?
-        for ($i = ($current_page - 1) * 5; $i < ($current_page - 1) * 5 + $row_per_page; $i++) {
+        for ($i = ($current_page - 1) * $row_per_page; $i < ($current_page - 1) * $row_per_page + $row_per_page; $i++) {
             if ($i < $total_columns) {
         ?>
                 <tr style="background-color:<?= $bg[$i % $row_per_page]; ?>;">
